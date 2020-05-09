@@ -1,0 +1,5 @@
+<div class="link">
+  <h4><%= link_to link.link_title, "http://#{link.link_url}" %></h4>
+  <p><%= link.link_description %></p>
+  <p class="xxsmall">About <%= distance_of_time_in_words(Time.now, link.created_at) %> ago</p>
+</div>
